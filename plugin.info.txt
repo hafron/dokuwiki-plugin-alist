@@ -1,0 +1,7 @@
+base alist1
+author Szymon Olewniczak
+email (my first name) [at] imz [dot] re
+date 2016-12-15
+name alist
+desc Advance lists styling
+url http://www.dokuwiki.org/plugin:alist

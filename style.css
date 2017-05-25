@@ -1,0 +1,24 @@
+ol {
+  counter-reset: alist-subnumber-counter1;
+  counter-reset: alist-subnumber-counter2;
+}
+
+ol li {
+	list-style: none;
+}
+
+ol li:before {
+  display: inline-block;
+  float: left;
+ }
+
+ol > li:before {
+  content: counter(alist-subnumber-counter1) ". ";
+  counter-increment: alist-subnumber-counter1;
+}
+
+
+ol > li ol > li:before {
+  content: counter(alist-subnumber-counter1) "." counter(alist-subnumber-counter2) ". ";
+  counter-increment: alist-subnumber-counter2;
+}
